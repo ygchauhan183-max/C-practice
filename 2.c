@@ -1,13 +1,9 @@
 #include<stdio.h>
-int main() {
-	int marks[4];
-	
-	for(int i = 0; i < 4; i++) {
-		printf("Enter the value of %d element of the array ", i);
-		scanf("%d", &marks[i]);
-	}
-	for(int i = 0; i < 4; i++) {
-		printf("The value of %d element of the array is %d\n", i, marks[i]);
-    }
+int main(){
+	float c, f;
+	printf("Enter celcius value:");
+	scanf("%f", &c);
+	f = (c*(9.0/5.0) + 32);
+	printf("Fahrenheit = %.2f", f);
 	return 0;
 }
